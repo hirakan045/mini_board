@@ -1,0 +1,8 @@
+<% if (val != '') { %>
+  <!-- JSON形式のデータをオブジェクトに変換している -->
+<% var obj = JSON.parse(val); %> 
+<tr>
+  <th><%= obj.id %></th>
+  <td><%= obj.msg %></td>
+</tr>
+<% } %>
